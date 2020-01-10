@@ -9,7 +9,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -27,7 +26,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: path.resolve(__dirname, 'src/assets/svg'),
+          include: `${__dirname}src/assets/svg/`,
         },
       },
     },
